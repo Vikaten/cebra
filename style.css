@@ -19,7 +19,7 @@ body{
 
 .header {
     margin-bottom: 120px;
-    background-image: url("C:/Users/Вика/Downloads/cebra/img/cover.png");
+    background-image: url("img/cover.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%; 
@@ -361,11 +361,18 @@ ul {
     margin-bottom: 20px;
     align-items: flex-start;
     margin-top: 20px;
+    justify-content: space-between;
 }
 
 .november-04{
     color: #B8B8B8;
-    margin-right: 351px;
+    margin-right: 251px;
+    width: 11px;
+}
+
+.arrow {
+    display: flex;
+    justify-content: right;
 }
 
 .img-november {
@@ -498,11 +505,11 @@ ul {
 }
 
 .nav-footer-0-1 {
-    width: 492px;
+    margin-right: 418px;
 }
 
 .nav-footer-0-2 {
-    width: 246px;
+    margin-right: 175px;
 }
 
 .nav-footer-1 {
@@ -568,21 +575,21 @@ ul {
     color: #4D4D4D;
     font-family: Inter;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 140%; 
     margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 
 
 @media (max-width: 1000px) {
     .container {
-        max-width: 980px;
+        max-width: 900px;
     }
 
     body{
-        width: 145vh;
+        width: 100%;
         height: 80vh;
     }
 
@@ -594,6 +601,7 @@ ul {
 
     .header-title {
         margin-left: 0;
+        margin-top: 150px;
     }
 
     .header-top {
@@ -647,7 +655,7 @@ ul {
     }
 
     .p-wise {
-        font-size: 16px;
+        max-width: 400px;
     }
 
     .news-publication {
@@ -666,13 +674,71 @@ ul {
         justify-content: flex-end;
         flex-direction: row;
         margin-bottom: 30px;
-        gap: 35px;
+        gap: 25px;
     }
 
     .column-2 {
         justify-content: flex-start;
         flex-direction: row;
         margin-bottom: 30px;
-        gap: 34px;
+        gap: 25px;
     }
+
+    .p-years {
+        margin-right: 230px;
+    }
+
+    .stroke-view {
+        margin-left: 0px;
+    }
+
+    .p-years-white {
+        margin-right: 230px;
+    }
+
+    .select-awards-text-white {
+        margin-right: 14px;
+    }
+
+    .nav-footer-0-1 {
+        margin-right: 177px;
+    }
+
+    .nav-footer-0-2 {
+        margin-right: 120px;
+    }
+
+    .nav-footer-0 ul{
+        font-size: 10px;
+    }
+
+    .nav-footer-1 {
+        font-size: 10px;
+        width: 230px;
+    }
+
+    .nav-footer-2 {
+        font-size: 10px;
+        width: 170px;
+    }
+
+    .nav-footer-3 {
+        font-size: 10px;
+        
+    }
+
+    .nav-footer-4 ul {
+        font-size: 10px;
+    }
+
+    .wise-logo {
+        width: 150px;
+        height: 50px;
+        position: absolute;
+    }
+
+    .background {
+        width: 100%;
+        height: 60%;
+    }   
 }
