@@ -119,7 +119,6 @@ ul {
 
 .text-1, .text-2 {
     max-width: 216px;
-
 }
 
 .link-more-about {
@@ -595,13 +594,13 @@ ul {
 
     .header{
         width: 100%;
-        height: 110%;
+        height: 80%;
         margin-bottom: 100px;
     }
 
     .header-title {
         margin-left: 0;
-        margin-top: 150px;
+        margin-top: 200px;
     }
 
     .header-top {
@@ -741,4 +740,74 @@ ul {
         width: 100%;
         height: 60%;
     }   
+}
+
+@media (max-width: 930px) {
+    .title-information {
+        font-size: 70px;
+    }
+
+    .text-items {
+        font-size: 24px;
+    }
+
+    .text-1, .text-2 {
+        max-width: 300px;
+    }
+
+    .link-more-about {
+        font-size: 20px;
+    }
+
+    .stroke-more-about {
+        width: 130px;
+    }
+
+    .title-last-project{
+        font-size: 70px;
+    }
+
+    .list-last-project li {
+        font-size: 18px;
+    }
+
+    .list-last-project sup {
+        font-size: 16px;
+    }
+
+    .select-awards-h1 {
+        font-size: 70px;
+    }
+
+    .select-awards-2022-1 {
+        font-size: 24px;
+    }
+
+    .select-awards-2022-2 {
+        font-size: 24px;
+    }
+
+    .select-awards-2021 {
+        font-size: 24px;
+    }
+
+    .view-more-awards {
+        font-size: 20px;
+    }
+
+    .stroke-view-more-awards {
+        width: 205px;
+    }
+
+    .news-publications-h1 {
+        font-size: 70px;
+    }
+
+   .november {
+    font-size: 24px;
+   } 
+
+   hr {
+    width: 900px;
+   }
 }
