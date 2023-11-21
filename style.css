@@ -6,10 +6,10 @@ html {
     box-sizing: inherit;
 }
 
-body{
+/* body{
     width: 195vh;
     height: 100vh;
-}
+} */
 
 .container {
     max-width: 1200px;
@@ -22,7 +22,7 @@ body{
     background-image: url("img/cover.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100%; 
+    height: 100vh; 
     width: 100%;
     position: relative;
     margin: 0 auto;
@@ -34,7 +34,7 @@ ul {
     margin: 0;
 }
 
-/* .header-top */a { 
+a { 
     text-decoration: none;
     color: white;
 }
@@ -52,6 +52,16 @@ ul {
     padding: 30px 0  10px;
 }
 
+.position-style {
+    margin-left: 500px;
+    font-family: Inter;
+    text-transform: uppercase;
+    padding: 0;
+    line-height: 110%;
+    font-weight: 400;
+    color: #4D4D4D;
+}
+
 .menu ul{
     display: flex;
     gap: 22px;
@@ -63,15 +73,11 @@ ul {
 }
 
 .header-title {
-    font-family: Inter;
-    font-size: 84px;
-    text-transform: uppercase;
-    color: white;
-    margin-top: 312px;
-    padding: 0;
     margin-bottom: 20px;
     display: flex;
-    margin-left: 500px;
+    margin-top: 312px;
+    font-size: 84px;
+    color: white;
 }
 
 .button {
@@ -87,34 +93,25 @@ ul {
     
 }
 
-.title-button button {
-    margin-left: 500px;
-}
-
 .information {
     display: flex;
     flex-direction: column;
     float: right;
-    margin-left: 500px;
 }
 
 .title-information {
-    font-family: Inter;
     font-size: 55px;
-    font-weight: 400;
-    line-height: 110%;
-    text-transform: uppercase;
-    color: #4D4D4D;
+    margin-left: 0;
 }
 
 .text-items {
-    font-family: Inter;
     font-size: 14px;
     line-height: 140%;
     color: #4D4D4D;
     display: flex;
     gap: 30px;
     padding-bottom: 40px;
+    text-transform: none;
 }
 
 .text-1, .text-2 {
@@ -142,13 +139,7 @@ ul {
 }
 
 .last-project {
-    color: #4D4D4D;
-    font-family: Inter;
     font-size: 55px;
-    font-weight: 400;
-    line-height: 110%;
-    text-transform: uppercase;
-    margin-left: 500px;
     margin-bottom: 40px;
     
 }
@@ -220,14 +211,7 @@ ul {
 }
 
 .select-awards-h1 {
-    color: #4D4D4D;
-    font-family: Inter;
     font-size: 55px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    text-transform: uppercase;
-    margin-left: 500px;
 }
 
 .select-awards-2022-1 {
@@ -329,7 +313,6 @@ ul {
 
 .stroke-view {
     margin-top: 40px;
-    margin-left: 500px;
 }
 
 .news-publication {
@@ -337,15 +320,7 @@ ul {
 }
 
 .news-publications-h1 {
-    color: #4D4D4D;
-    font-family: Inter;
     font-size: 55px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    text-transform: uppercase;
-    margin-left: 500px;
-    padding: 0;
 }
 
 .november {
@@ -388,16 +363,8 @@ ul {
 }
 
 .wise {
-    color:  #4D4D4D;
-    font-family: Inter;
     font-size: 55px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 110%;
-    text-transform: uppercase;
-    margin-left: 500px;
     margin-bottom: 20px;
-    margin-top: 0;
 }
 
 .men-wise {
@@ -489,6 +456,8 @@ ul {
     display: flex;
     position: relative;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-footer-0 ul{
@@ -504,7 +473,8 @@ ul {
 }
 
 .nav-footer-0-1 {
-    margin-right: 418px;
+    margin-right: 160px;
+    width: 223px;
 }
 
 .nav-footer-0-2 {
@@ -519,7 +489,8 @@ ul {
     font-weight: 400;
     line-height: 154%;
     text-transform: uppercase;
-    width: 492px;
+    /* width: 223px;
+    margin-right: 160px; */
 }
 
 .nav-footer-2 {
@@ -530,7 +501,8 @@ ul {
     font-weight: 400;
     line-height: 154%;
     text-transform: uppercase;
-    width: 246px;
+    /* width: 246px;
+    display: inline-flex; */
 }
 
 .nav-footer-3 {
@@ -541,7 +513,8 @@ ul {
     font-weight: 400;
     line-height: 154%;
     text-transform: uppercase;
-    /* width: 185px; */
+    /* margin-right: 170px; 
+    display: inline-flex; */
 }
 
 .nav-footer-4 ul{
@@ -552,9 +525,9 @@ ul {
     font-weight: 400;
     line-height: 154%;
     text-transform: uppercase;
-    position: absolute;
-    right: 0;
-}
+    flex-direction: column;
+    /* display: inline-flex; */
+} 
 
 .nav-footer-1 a,
 .nav-footer-2 a,
@@ -580,21 +553,46 @@ ul {
     padding-bottom: 20px;
 }
 
+@media (max-width: 1250px) {
+    .columns {
+        flex-wrap: wrap;
+    }
+
+    .list-last-project {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .p-wise {
+        font-size: 16px;
+    }
+
+    .wise-logo {
+        width: 200px;
+        height: 70px;
+        left: 498px;
+        max-width: 1100px;
+    }
+
+    /* .nav-footer-0-1 {
+        margin-right: 100px;
+    }
+
+    .nav-footer-1 {
+        margin-right: 100px;
+    } */
+}
 
 
-@media (max-width: 1000px) {
+
+@media (max-width: 1100px) {
     .container {
         max-width: 900px;
     }
 
-    body{
-        width: 100%;
-        height: 80vh;
-    }
-
     .header{
         width: 100%;
-        height: 80%;
+        height: 50vh;
         margin-bottom: 100px;
     }
 
@@ -713,21 +711,28 @@ ul {
 
     .nav-footer-1 {
         font-size: 10px;
-        width: 230px;
+        /* width: 230px; */
+        display: inline-flex;
     }
 
     .nav-footer-2 {
         font-size: 10px;
-        width: 170px;
+        /* width: 170px; */
+        display: inline-flex;
     }
 
     .nav-footer-3 {
         font-size: 10px;
-        
+        display: inline-flex;
     }
 
     .nav-footer-4 ul {
         font-size: 10px;
+        display: inline-flex;
+    }
+
+    .menu-footer {
+        display: flex;
     }
 
     .wise-logo {
@@ -740,9 +745,16 @@ ul {
         width: 100%;
         height: 60%;
     }   
+
+    .arrow {
+        display: none;
+    }
 }
 
 @media (max-width: 930px) {
+    .header {
+        height: 70vh;
+    }
     .title-information {
         font-size: 70px;
     }
@@ -809,5 +821,17 @@ ul {
 
    hr {
     width: 900px;
+   }
+
+   /* .men-wise {
+    display: flex;
+    flex-wrap: wrap;
+   } */
+
+   .p-wise {
+        font-size: 20px;
+        text-align: justify;
+        /* width: 900px;
+        flex-wrap: wrap; */
    }
 }
