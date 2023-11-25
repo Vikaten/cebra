@@ -490,6 +490,7 @@ a {
 .subtract {
     height: 64px;
     position: absolute;
+    bottom: 0;
     right: 0;
     vertical-align: bottom;
 }
